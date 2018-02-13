@@ -1,0 +1,12 @@
+
+.list-item{
+    width:64px;
+    list-style-type: none;
+    margin: 10px;
+    border: 1px solid #dae2ea;
+    background: #f8faff;
+    color: #7c9eb2;
+    padding: 1px 5px;
+    font-weight: bold;
+    line-height: 20px;
+}
