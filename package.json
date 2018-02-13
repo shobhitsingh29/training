@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "This is a basic foundational getting started sample for using open api client lib.",
   "scripts": {
-    "start": "node_modules\\.bin\\webpack-dev-server"
+    "start": "webpack-dev-server --hot"
   },
   "author": "SaxoBank",
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "webpack-dev-middleware": "1.10.2",
+    "webpack-hot-middleware": "2.18.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

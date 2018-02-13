@@ -1,12 +1,11 @@
 const path = require('path');
-
+const webpack = require('webpack');
 module.exports = {
-    entry: {
-        tictactoe: path.join(__dirname, 'tictactoe', 'tictactoe'),
-    },
+    entry: [
+        'webpack-hot-middleware/client?reload=true',
+    ],
 
     devtool: "source-map",
-
     resolve: {
         extensions: ['.js', '.json']
     },
@@ -16,6 +15,9 @@ module.exports = {
         reasons: true,
         chunks: true
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+    ],
 
     devServer: {
         historyApiFallback: true,

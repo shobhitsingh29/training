@@ -1,7 +1,12 @@
 .click-div{
-    width:6%;
+    width: fit-content;
     height: 100px;
-    background:mintcream;
+    background:deeppink;
+    cursor: pointer;
+    text-align: center;
+    top: 585px;
+    line-height: 93px;
+    font-size: 100px;
 }
 body{
     height:2000px;
