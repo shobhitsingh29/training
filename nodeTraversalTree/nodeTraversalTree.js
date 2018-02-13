@@ -19,6 +19,12 @@ class NodeTraversalTree {
                 }
             }
         };
+      /*  var arr = Array.prototype.slice.call(obj);
+        arr.map(function (val, key) {
+            console.log(val);
+            console.log("key", key);
+
+        })*/
         this.div0 = document.getElementsByTagName("pre")[0];
         this.div1 = document.getElementsByTagName("div")[0];
         this.div0.innerHTML = JSON.stringify(obj, null, 4);
@@ -33,7 +39,8 @@ class NodeTraversalTree {
     traverse(obj) {
         for (let key in obj) {
             if (typeof obj[key] == "object") {
-
+                let div=document.createElement("div");
+                div.innerHTML=key;
                 this.nodes += key;
                 this.nodes += "=>";
 
