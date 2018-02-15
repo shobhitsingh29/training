@@ -88,11 +88,11 @@ class NodeTraversalTree {
                     let objAdded = {};
                     objAdded[objToAdd] = "";
 
-                    obj[key] =Object.assign({},objAdded);
+                    obj[key] = Object.assign({}, objAdded);
 
 
                 } else {
-                    obj = null;
+                    delete obj[target];
                 }
 
             }
@@ -109,7 +109,7 @@ class NodeTraversalTree {
 
             }
         }
-        this.obj=obj;
+        this.obj = obj;
     }
 
 
@@ -152,9 +152,9 @@ class NodeTraversalTree {
 }
 
 const nodeTraversalTree = new NodeTraversalTree();
-nodeTraversalTree.object=nodeTraversalTree.obj;
+nodeTraversalTree.object = nodeTraversalTree.obj;
 setInterval(function () {
 
     console.log(nodeTraversalTree.object);
 
-},1000);
+}, 6000);
