@@ -5,19 +5,17 @@
     <title>PaymentGateway</title>
     <link rel="stylesheet" href="./paymentGateway.css">
 </head>
-<body>
+<body class="payment-panel">
 <h1>PaymentGateway</h1>
 
-<form onsubmit="event.preventDefault();">
-    <label for="userName">name:</label>
-    <input type="text" placeholder="name" id="userName">
-    <label for="cardNo">Card no:</label>
-    <input type="text" placeholder="card no" id="cardNo">
+<form class=" form-list" onsubmit="event.preventDefault();">
+    <label id="labelCard" for="cardNo" >Card : </label>
+    <input type="text" placeholder="card no" id="cardNo"  required>
     <label for="cardExpiryDate">Card expiry date:</label>
-    <input type="date" id="cardExpiryDate" name="card expiry date">
+    <input type="month" id="cardExpiryDate"  name="card expiry date" data-date-format="MM YY" min="2018-02-017" required>
     <label for="cvv">Cvv:</label>
-    <input type="text" placeholder="cvv" id="cvv">
-    <input type="submit" value="submit" onclick="onInfo()">
+    <input type="text" placeholder="XXX" id="cvv" >
+    <input type="submit" class="submit-btn button" value="submit" onclick="onInfo()" >
 </form>
 <div id="savedCard">
 
